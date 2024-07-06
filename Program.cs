@@ -1,6 +1,9 @@
 using EmployeeAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
+using EmployeeAPI.Services.Contrato;
+using EmployeeAPI.Services.Implementacion;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +15,9 @@ builder.Services.AddDbContext<DbempleadoContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SQLServer"));
 });
+
+builder.Services.AddScoped<IDepartamentoService, DepartamentoService>();
+builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
 
 var app = builder.Build();
 
