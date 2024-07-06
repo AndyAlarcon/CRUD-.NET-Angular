@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 using EmployeeAPI.Services.Contrato;
 using EmployeeAPI.Services.Implementacion;
+using AutoMapper;
+using EmployeeAPI.DTOs;
+using EmployeeAPI.Utilidades;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +21,8 @@ builder.Services.AddDbContext<DbempleadoContext>(options =>
 
 builder.Services.AddScoped<IDepartamentoService, DepartamentoService>();
 builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 var app = builder.Build();
 

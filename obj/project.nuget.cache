@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Mr6qTGZ4EKOh0kT2zaQURej1RpE5yjqd08WyQqQG/8yo2D/ltPv60P5wPPw3zLDShY7+5oI/qra5j9KbUKIqZg==",
+  "dgSpecHash": "KVs/1yTAebcIxkkEX0fRhmWjznPzVR9HK7+i3VUbENX1z2nsQ74M+vKLoi+Zh5Xxvn/9dC4mwWqSpsgaUgNQFA==",
   "success": true,
   "projectFilePath": "C:\\Desarrollo\\CRUD Angular y .NET\\EmployeeAPI\\EmployeeAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
